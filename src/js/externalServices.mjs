@@ -30,7 +30,7 @@ export async function checkout(payload) {
     },
     body: JSON.stringify(payload)
   };
-  return await fetch("http://server-nodejs.cit.byui.edu:3000/checkout", options)
+  return await fetch("/.netlify/functions/proxy/checkout", options)
     .then(convertToJson);
 }
 
@@ -42,7 +42,7 @@ export async function loginRequest(user) {
     },
     body: JSON.stringify(user),
   };
-  const response = await fetch("http://server-nodejs.cit.byui.edu:3000/login", options).then(convertToJson);
+  const response = await fetch("/.netlify/functions/proxy/login", options).then(convertToJson);
     
   return response.accessToken;
 }
