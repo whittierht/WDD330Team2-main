@@ -1,0 +1,41 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="../js/login.js" type="module"></script>
+  </head>
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+      <section class="login">
+        <h2>Login to Your Account</h2>
+        <p>
+          Don't have an account? <a href="/signup/">Sign up here</a> or
+          <a href="/">return to home page</a>
+        </p>
+        <form id="login-form" class="login-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="user1@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="5"
+            />
+          </div>
+          <button type="submit" class="login-button" id="loginButton">Login</button>
+          <p class="signup-link">
+            Don't have an account? <a href="/signup/">Sign Up</a>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer id="main-footer"></footer>
+  </body>
+</html>

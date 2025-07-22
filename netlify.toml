@@ -1,0 +1,14 @@
+[[redirects]]
+from = "/login"
+to = "/login/index.html"
+status = 200
+
+[[redirects]]
+from = "/signup"
+to = "/signup/index.html"
+status = 200
+
+[[redirects]]
+from = "/wishlist"
+to = "/wishlist/index.html"
+status = 200
